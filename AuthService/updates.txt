@@ -1,0 +1,74 @@
+Definitions- arranges a complex application as a collection of fine grained loosely-coupled services
+
+benefits
+
+- Highly maintainable and testable
+- Loosely coupled
+- Independently deployable
+- Organized around business capabilities
+- Owned by a small team
+
+- naming convention of microservices
+- microservices in python django
+- patterns
+
+Patterns
+
+1. aggregator -collects related items of data and displays them , based on dry principle (imagine you need data from two or three services then you use aggregator)
+
+2. api gate-way helps to create fine grained apis for different types of apis
+   can convert the protocol request from one type to other
+   it acts as an entry point to forward the clients requests to appropriate microservices
+
+3. chain of responsibility- produces a single output which is a combination of multiple chained outputs
+
+4. asynchronous messaging all services can communicate with each other but they do not have to communicate with each other sequentially
+
+5. database design pattern(shared) either database perservice or shared database
+
+6. event sourcing creates events regarding the changes in the application state
+
+7. branch pattern fora specific service you can have different branches extends aggregated pattern
+
+8. command querry when you want to querry for specific data maybe from different dbs (remember the dbs be limited)
+
+9. decomposition break app based on business capability , sub domain of application or strangler or vine
+
+https://discord.gg/89xNW8CG
+
+https://www.youtube.com/watch?v=0iB5IPoTDts react python microservices
+
+https://www.elastic.co/videos/django-microservices-made-easy-by-paul-hallett
+
+https://medium.com/greedygame-media/how-we-broke-up-our-monolithic-django-service-into-microservices-8ad6ff4db9d4
+
+https://medium.com/geekculture/enabling-microservices-architecture-synchronous-communication-8093a42481ec
+
+https://www.youtube.com/watch?v=y69VDOczkik
+https://www.youtube.com/watch?v=0iB5IPoTDts
+
+https://www.youtube.com/watch?v=uYgla2-mxMc -must start
+
+DESIGN
+
+user-groups:
+-Staff
+-isPassenger
+-isDriver
+-isFleet managers
+
+-System Admin
+
+TO DOS
+
+- CI/CD -travis ci
+
+verion control-git
+repo mgt -github/gitlab
+ci -travis ci, circle ci
+cd -heroku , aws,digital ocean
+docker- containerisation
+
+automatic Pipelines
+deploy-test
+deploy-production
